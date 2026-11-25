@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Israel Tobiko | Software Developer - Ruai, Nairobi, Kenya</title>
+<meta name="description" content="Israel Tobiko - Professional Software Developer based in Ruai, Nairobi, Kenya. Web Development, Mobile Apps, UI/UX & Software Solutions.">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',system-ui,sans-serif;scroll-behavior:smooth}
+:root{--blue:#0A4DFF;--dark:#0F172A;--orange:#FF7A00;--light:#F8FAFC}
+body{background:#fff;color:var(--dark);line-height:1.6;overflow-x:hidden}
+a{text-decoration:none}
+nav{position:fixed;top:0;width:100%;background:rgba(255,255,255,0.95);backdrop-filter:blur(10px);display:flex;justify-content:space-between;align-items:center;padding:16px 5%;box-shadow:0 2px 15px rgba(0,0,0,0.08);z-index:100}
+.logo{font-size:22px;font-weight:900;color:var(--blue)} .logo span{color:var(--orange)}
+nav ul{display:flex;list-style:none;gap:28px}
+nav ul a{color:var(--dark);font-weight:600;font-size:14px}
+nav ul a:hover{color:var(--blue)}
+.btn{background:var(--blue);color:#fff;padding:12px 24px;border-radius:30px;font-weight:700;border:none;cursor:pointer;transition:.3s;display:inline-block}
+.btn:hover{background:var(--orange);transform:translateY(-2px)}
+.btn-orange{background:var(--orange)} .btn-orange:hover{background:var(--blue)}
+.hero{min-height:100vh;display:flex;align-items:center;padding:120px 5% 60px;background:linear-gradient(135deg,#EEF2FF 0%,#fff 60%);gap:40px;flex-wrap:wrap}
+.hero-text{flex:1;min-width:300px;animation:fadeUp 1s ease}
+.hero-text small{background:#E0E7FF;color:var(--blue);padding:6px 14px;border-radius:20px;font-weight:700;font-size:12px;letter-spacing:1px}
+.hero-text h1{font-size:52px;line-height:1.05;margin:18px 0}
+.hero-text h1 span{color:var(--blue)} .hero-text h1 b{color:var(--orange)}
+.hero-text p{color:#475569;font-size:17px;max-width:520px;margin-bottom:22px}
+.hero-img{flex:1;min-width:300px;text-align:center;animation:fadeIn 1.2s ease}
+.hero-img img{width:360px;height:360px;object-fit:cover;border-radius:50%;border:8px solid #fff;box-shadow:0 20px 50px rgba(10,77,255,0.25)}
+.hero-img .badge{background:var(--dark);color:#fff;padding:10px 18px;border-radius:30px;font-size:13px;display:inline-block;margin-top:-20px;position:relative}
+.stats{display:flex;gap:30px;margin-top:25px;flex-wrap:wrap}
+.stats div b{font-size:26px;color:var(--blue)} .stats div{font-size:13px;color:#64748B}
+section{padding:80px 5%}
+.section-title{text-align:center;margin-bottom:40px}
+.section-title small{color:var(--orange);font-weight:800;letter-spacing:2px;text-transform:uppercase;font-size:12px}
+.section-title h2{font-size:34px;margin-top:8px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px}
+.card{background:var(--light);padding:28px;border-radius:18px;border:1px solid #E2E8F0;transition:.3s}
+.card:hover{transform:translateY(-8px);box-shadow:0 15px 35px rgba(0,0,0,0.08);border-color:var(--blue)}
+.card i{font-size:32px;color:var(--blue);margin-bottom:12px}
+.card h3{margin-bottom:8px} .card p{color:#475569;font-size:14px}
+.skill-bar{background:#E2E8F0;height:8px;border-radius:10px;margin:8px 0 16px;overflow:hidden}
+.skill-fill{height:100%;background:linear-gradient(90deg,var(--blue),var(--orange));border-radius:10px;width:0;transition:width 1.5s ease}
+.project{background:#fff;border:1px solid #E2E8F0;border-radius:18px;overflow:hidden;transition:.3s}
+.project:hover{transform:translateY(-6px);box-shadow:0 15px 30px rgba(0,0,0,0.08)}
+.project img{width:100%;height:180px;object-fit:cover}
+.project div{padding:20px} .project p{font-size:14px;color:#475569}
+.tag{display:inline-block;background:#EEF2FF;color:var(--blue);font-size:11px;padding:4px 10px;border-radius:20px;font-weight:700;margin:4px 4px 0 0}
+.contact{background:var(--dark);color:#fff;border-radius:24px;padding:50px 30px;display:grid;grid-template-columns:1fr 1fr;gap:30px}
+.contact a{color:#fff} .contact input,.contact textarea{width:100%;padding:13px;border-radius:10px;border:none;margin-bottom:12px;background:#1E293B;color:#fff}
+.contact input::placeholder,.contact textarea::placeholder{color:#94A3B8}
+.social{display:flex;gap:12px;margin-top:16px}
+.social a{width:44px;height:44px;background:#1E293B;display:flex;align-items:center;justify-content:center;border-radius:50%;font-size:18px;transition:.3s}
+.social a:hover{background:var(--orange);transform:translateY(-3px)}
+footer{text-align:center;padding:25px;color:#64748B;font-size:13px}
+.whatsapp-float{position:fixed;bottom:20px;right:20px;background:#25D366;color:#fff;width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:28px;box-shadow:0 8px 20px rgba(0,0,0,0.2);z-index:99}
+@keyframes fadeUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+@media(max-width:768px){.hero-text h1{font-size:36px}.hero-img img{width:280px;height:280px}nav ul{display:none}.contact{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">ISRAEL <span>TOBIKO</span></div>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="#contact" class="btn">Hire Me</a>
+</nav>
+
+<section class="hero" id="home">
+  <div class="hero-text">
+    <small>● AVAILABLE FOR WORK</small>
+    <h1>Hello, I'm <span>Israel Tobiko</span><br><b>Software Developer</b></h1>
+    <p>I build fast, modern and beautiful websites, mobile apps and software solutions for businesses in Kenya and around the world. From idea to launch — I make technology work for you.</p>
+    <a href="#projects" class="btn">View My Work →</a>
+    <a href="https://wa.me/254181895975" target="_blank" class="btn btn-orange" style="margin-left:8px">WhatsApp Me</a>
+    <div class="stats">
+      <div><b>2+ Years</b><br>Experience</div>
+      <div><b>20+ Projects</b><br>Completed</div>
+      <div><b>100%</b><br>Client Satisfaction</div>
+    </div>
+  </div>
+  <div class="hero-img">
+    <img src="profile.jpg" alt="Israel Tobiko - Software Developer">
+    <br><span class="badge">📍 Ruai, Nairobi, Kenya</span>
+  </div>
+</section>
+
+<section id="about" style="background:var(--light)">
+  <div class="section-title"><small>About Me</small><h2>Developer. Creator. Problem Solver.</h2></div>
+  <div style="max-width:900px;margin:auto;text-align:center;color:#475569;font-size:16px;line-height:1.8">
+    <p>My name is <b style="color:var(--dark)">Israel Tobiko</b>, a passionate Software Developer based in <b>Ruai, Nairobi, Kenya</b>.</p>
+    <p style="margin-top:12px">I specialize in building clean, user-friendly and high-performing digital products. I believe great software is not just about code — it's about solving real problems for real people. Whether it's a business website, an online shop, a portfolio or a custom system, I deliver solutions that are fast, secure and built to grow.</p>
+    <p style="margin-top:12px"><b>My Mission:</b> To help businesses and individuals in Africa and beyond go digital with world-class technology.</p>
+    <div style="margin-top:22px">
+      <a href="mailto:cgtobby53@gmail.com" class="btn">📧 cgtobby53@gmail.com</a>
+      <a href="tel:+254181895975" class="btn btn-orange" style="margin-left:8px">📞 0181895975</a>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="section-title"><small>My Skills</small><h2>What I Can Do For You</h2></div>
+  <div class="grid">
+    <div class="card"><i class="fa-solid fa-code"></i><h3>Web Development</h3><p>Modern responsive websites using HTML, CSS, JavaScript, React & WordPress. Fast, SEO-friendly and mobile-first.</p></div>
+    <div class="card"><i class="fa-solid fa-mobile-screen"></i><h3>Mobile Apps</h3><p>Android & cross-platform apps that are smooth, beautiful and easy to use for your customers.</p></div>
+    <div class="card"><i class="fa-solid fa-pen-nib"></i><h3>UI / UX Design</h3><p>Clean designs that your users will love. From wireframes to full interfaces in Figma.</p></div>
+    <div class="card"><i class="fa-solid fa-cart-shopping"></i><h3>E-Commerce</h3><p>Online shops with M-Pesa, PayPal & card payments. Sell to Kenya and the world.</p></div>
+    <div class="card"><i class="fa-solid fa-database"></i><h3>Backend & Databases</h3><p>Secure systems with Python, Node.js, PHP, MySQL & Firebase. Your data stays safe.</p></div>
+    <div class="card"><i class="fa-solid fa-rocket"></i><h3>SEO & Maintenance</h3><p>I help your website rank on Google and keep it updated, secure and fast.</p></div>
+  </div>
+  <div style="max-width:700px;margin:40px auto 0">
+    <p><b>HTML / CSS</b></p><div class="skill-bar"><div class="skill-fill" data-w="95%"></div></div>
+    <p><b>JavaScript</b></p><div class="skill-bar"><div class="skill-fill" data-w="90%"></div></div>
+    <p><b>Python</b></p><div class="skill-bar"><div class="skill-fill" data-w="88%"></div></div>
+    <p><b>UI/UX & Graphics</b></p><div class="skill-bar"><div class="skill-fill" data-w="85%"></div></div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="section-title"><small>Portfolio</small><h2>Selected Projects</h2></div>
+  <div class="grid">
+    <div class="project"><img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800&auto=format&fit=crop" alt="Business Website"><div><h3>Business Website</h3><p>Modern website for local businesses to attract customers online and showcase services.</p><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div></div>
+    <div class="project"><img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=800&auto=format&fit=crop" alt="E-Commerce"><div><h3>E-Commerce Store</h3><p>Online shop with M-Pesa checkout, product management and customer orders.</p><span class="tag">E-Commerce</span><span class="tag">M-Pesa</span><span class="tag">UI/UX</span></div></div>
+    <div class="project"><img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=800&auto=format&fit=crop" alt="Mobile App"><div><h3>Mobile App</h3><p>Clean and fast mobile application designed for everyday users in Kenya.</p><span class="tag">Android</span><span class="tag">Mobile App</span></div></div>
+  </div>
+  <div style="text-align:center;margin-top:30px"><a href="https://github.com/cgtobby" target="_blank" class="btn">View More On GitHub →</a></div>
+</section>
+
+<section id="contact">
+  <div class="contact">
+    <div>
+      <small style="color:var(--orange);font-weight:800;letter-spacing:2px">GET IN TOUCH</small>
+      <h2 style="font-size:32px;margin:10px 0">Let's Build Something Great Together</h2>
+      <p style="color:#CBD5E1">Have a project in mind? A website, an app, or an idea? Send me a message and I will reply within 24 hours.</p>
+      <p style="margin-top:20px">📍 Ruai, Nairobi, Kenya</p>
+      <p>📧 <a href="mailto:cgtobby53@gmail.com">cgtobby53@gmail.com</a></p>
+      <p>📞 <a href="tel:+254181895975">0181895975</a></p>
+      <div class="social">
+        <a href="https://github.com/cgtobby" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.instagram.com/cg_tobby53" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://x.com/CgOsoro" target="_blank" title="X"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="https://wa.me/254181895975" target="_blank" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="mailto:cgtobby53@gmail.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+    <form onsubmit="sendMail(event)">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <input type="text" id="subject" placeholder="Subject - e.g. I need a website">
+      <textarea id="message" rows="4" placeholder="Tell me about your project..." required></textarea>
+      <button class="btn btn-orange" style="width:100%">Send Message →</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  © 2026 Israel Tobiko. All Rights Reserved. | Software Developer - Ruai, Nairobi, Kenya<br>
+  <a href="https://github.com/cgtobby" target="_blank">GitHub</a> • <a href="https://www.instagram.com/cg_tobby53" target="_blank">Instagram</a> • <a href="https://x.com/CgOsoro" target="_blank">X</a> • <a href="mailto:cgtobby53@gmail.com">Email</a>
+</footer>
+
+<a class="whatsapp-float" href="https://wa.me/254181895975" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+
+<script>
+window.addEventListener('scroll', ()=>{
+  document.querySelectorAll('.skill-fill').forEach(el=>{
+    let rect = el.getBoundingClientRect();
+    if(rect.top < window.innerHeight){ el.style.width = el.dataset.w; }
+  });
+});
+function sendMail(e){
+  e.preventDefault();
+  let name=document.getElementById('name').value;
+  let email=document.getElementById('email').value;
+  let subject=document.getElementById('subject').value || 'New Project Inquiry';
+  let msg=document.getElementById('message').value;
+  window.location.href = `mailto:cgtobby53@gmail.com?subject=${encodeURIComponent(subject+' - from '+name)}&body=${encodeURIComponent(msg+'\n\nFrom: '+name+' ('+email+')')}`;
+  alert('Thank you '+name+'! Your email app will open to send your message to Israel Tobiko.');
+}
+</script>
+</body>
+</html>
